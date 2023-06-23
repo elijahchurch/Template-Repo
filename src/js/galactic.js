@@ -30,6 +30,7 @@ export default class Galaxycalc {
             }
             this.mercuryPassage = `${(this.mercuryAge - (filterAge / 0.24)).toFixed(2)} years have passed on Mercury since you were ${endPassage}`;
             this.venusPassage = `${(this.venusAge - (filterAge / 0.62)).toFixed(2)} years have passed on Venus since you were ${endPassage}`;
+            this.marsPassage = `${(this.marsAge - (filterAge / 1.88)).toFixed(2)} years have passed on Mars since you were ${endPassage}`;
 
 
         }
