@@ -3,3 +3,22 @@ body {
     text-align: center;
     font-size: larger;
 }
+
+.planets {
+    align-items: center;
+    width: 20%;
+}
+
+.container {
+    border-style: solid;
+    background-color: darkblue;
+    color: aliceblue;
+    margin: 20px;
+    padding: 20px;
+}
+
+#Earth {
+    background-image: url("../assets/images/Earth.jpg");
+    display: flex;
+    flex-direction: column;
+}
