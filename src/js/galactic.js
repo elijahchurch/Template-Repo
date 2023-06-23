@@ -34,7 +34,11 @@ export default class Galaxycalc {
             this.marsPassage = `${(this.marsAge - (filterAge / 1.88)).toFixed(2)} years have passed on Mars ${pastPassage}`;
             this.jupiterPassage = `${(this.jupiterAge - (filterAge / 11.86)).toFixed(2)} years have passed on Jupiter ${pastPassage}`;
         } else if (filterAge > this.earthAge) {
-            this.earthPassage = `${filterAge - this.earthAge} years will pass ${futurePassage}`;
+            if ((filterAge - this.earthAge) === 1) {
+                this.earthPassage = `${filterAge - this.earthAge} year will pass ${futurePassage}`;
+            } else {
+                this.earthPassage = `${filterAge - this.earthAge} years will pass ${futurePassage}`;
+            }
 
         }
 

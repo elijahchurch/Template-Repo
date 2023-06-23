@@ -49,7 +49,7 @@ describe("Galaxycalc object and its methods", () => {
         expect(newUser.earthPassage).toEqual('10 years have passed since you were 22 on Earth.');
     });
 
-    test("calc-method should return correct grammer if differnce in earth age is only 1 year", () => {
+    test("calc-method should return correct grammar if differnce in earth age is only 1 year", () => {
         newUser.calcGalacticPassage(31);
         expect(newUser.earthPassage).toEqual('1 year has passed since you were 31 on Earth.');
     });
@@ -67,21 +67,24 @@ describe("Galaxycalc object and its methods", () => {
     test("calc-method should calculate the passage of Venus years from input", () => {
         newUser.calcGalacticPassage(22);
         expect(newUser.venusPassage).toEqual('16.13 years have passed on Venus since you were 22 on Earth.')
-    })
+    });
 
     test("calc-method should calculate the passage of Mars years from input", () => {
         newUser.calcGalacticPassage(22);
         expect(newUser.marsPassage).toEqual('5.32 years have passed on Mars since you were 22 on Earth.')
-    })
+    });
 
     test("calc-method should calculate the passage of Jupiter years from input", () => {
         newUser.calcGalacticPassage(22);
         expect(newUser.jupiterPassage).toEqual("0.85 years have passed on Jupiter since you were 22 on Earth.")
-    })
+    });
     test("calc-method should calculate the future passage of earth from input", () => {
         newUser.calcGalacticPassage(50);
         expect(newUser.earthPassage).toEqual("18 years will pass until you are 50 on Earth.");
-    })
-
+    });
+    test("calc-method should return correct grammar if future age difference is 1", () => {
+        newUser.calcGalacticPassage(33);
+        expect(newUser.earthPassage).toEqual("1 year will pass until you are 33 on Earth.");
+    });
 
 })
