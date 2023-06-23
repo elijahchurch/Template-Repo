@@ -31,4 +31,8 @@ describe("Galaxycalc object and its methods", () => {
         expect(newUser.venusAge).toEqual(51.61);
     });
 
+    test("it should update the user's age in Mars years", () => {
+        expect(newUser.marsAge).toEqual(17.02);
+    })
+
 })
