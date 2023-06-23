@@ -14,6 +14,6 @@ export default class Galaxycalc {
 
     setGalacticAges() {
         this.mercuryAge += parseFloat((this.earthAge / 0.24).toFixed(2));
-
+        this.venusAge += parseFloat((this.earthAge / 0.62).toFixed(2));
     }
 };
