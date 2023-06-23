@@ -6,6 +6,15 @@ body {
 
 input {
     width: 60px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color: rgb(231, 199, 250);
+    text-align: center;
+}
+
+button {
+    background-color: rgb(231, 199, 250);
 }
 
 img {
@@ -28,7 +37,7 @@ img {
     border-color: black;
     border-radius: 30px;
     background-color: rgba(47, 16, 88, 0.8);
-    color: aliceblue;
+    color: rgb(231, 199, 250);
     margin: 20px;
     padding: 20px;
 }
