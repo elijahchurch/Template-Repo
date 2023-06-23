@@ -64,5 +64,10 @@ describe("Galaxycalc object and its methods", () => {
         expect(newUser.mercuryPassage).toEqual('41.66 years have passed on Mercury since you were 22 on Earth.');
     });
 
+    test("calc-method should calculate the pass of Venus years form input", () => {
+        newUser.calcGalacticPassage(22);
+        expect(newUser.venusPassage).toEqual('16.13 years have passed on Venus since you were 22 on Earth.')
+    })
+
 
 })
