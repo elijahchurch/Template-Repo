@@ -32,7 +32,7 @@ This webpage was made with HTML and styled with CSS. It contains a simple form t
 
 * Due to time restraints, the calcGalacticPassage() prototype method is not tested for nor accounts for grammar mistakes in the stored return when non-Earth planets have a difference of age of exactly 1.
 * Not all JS backend functionality is present on the actual site at the moment.
-* images on the site are not fully locked into place.
+* Images on the site are not fully locked into place.
 
 ## License
 
