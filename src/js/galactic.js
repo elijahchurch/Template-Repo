@@ -1,6 +1,6 @@
 export default class Galaxycalc {
     constructor(age) {
-        this.earthAge = age;
+        this.earthAge = Math.round(age);
         this.mercuryAge = 0;
         this.venusAge = 0;
         this.marsAge = 0;

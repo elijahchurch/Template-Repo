@@ -17,7 +17,7 @@ describe("Galaxycalc object and its methods", () => {
     });
 
     test("it should create a calculator object with a rounded age", () => {
-        newUser = newGalaxycalc(32.43);
+        newUser = new Galaxycalc(32.43);
         expect(newUser.earthAge).toEqual(32);
     });
 
