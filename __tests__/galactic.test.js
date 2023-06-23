@@ -44,6 +44,11 @@ describe("Galaxycalc object and its methods", () => {
         expect(newUser.earthPassage).toEqual('10 years have passed since you were 22 on Earth')
     })
 
+    test("method should return correct grammer if differnce in earth age is only 1 year", () => {
+        newUser.calcGalacticPassage(31);
+        expect(newUser.earthPassage).toEqual('1 year has passed since you were 31 on Earth')
+    })
+
 
 
 
