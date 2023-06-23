@@ -23,8 +23,12 @@ describe("Galaxycalc object and its methods", () => {
         newUser.setGalacticAges();
     });
 
-    test("it should return the user's age in Mercury years", () => {
+    test("it should update the user's age in Mercury years", () => {
         expect(newUser.mercuryAge).toEqual(133.33);
+    });
+
+    test("it should update the user's age in Venus years", () => {
+        expect(newUser.venusAge).toEqual(51.61);
     });
 
 })
