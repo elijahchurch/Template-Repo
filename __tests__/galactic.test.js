@@ -76,7 +76,7 @@ describe("Galaxycalc object and its methods", () => {
 
     test("calc-method should calculate the passage of Jupiter years from input", () => {
         newUser.calcGalacticPassage(22);
-        expect(newUser.jupiterPassage).toEqual("0.85 years have passed on Jupiter since you were 22 on Earth")
+        expect(newUser.jupiterPassage).toEqual("0.85 years have passed on Jupiter since you were 22 on Earth.")
     })
 
 
