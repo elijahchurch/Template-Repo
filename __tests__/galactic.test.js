@@ -12,3 +12,5 @@
 //         expect(rectangle.side2).toEqual(5);
 //     });
 // // 
+
+import Galaxycalc from "../src/js/galactic";
