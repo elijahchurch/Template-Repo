@@ -1,13 +1,9 @@
 import Galaxycalc from "../src/js/galactic";
 
 describe("Galaxycalc object and its methods", () => {
-    let newUser;
-
-    beforeEach(() => {
-        newUser = new Galaxycalc(32);
-    });
 
     test("it should create a calculator object that contains the user current age", () => {
+        newUser = new Galaxycalc(32);
         expect(newUser.earthAge).toEqual(32);
         expect(newUser.mercuryAge).toEqual(0);
         expect(newUser.venusAge).toEqual(0);
@@ -20,9 +16,15 @@ describe("Galaxycalc object and its methods", () => {
         expect(newUser.jupiterPassage).toEqual(0);
     });
 
-    test("it should return the user's age in Mercury years", () => {
+    let newUser;
+
+    beforeEach(() => {
+        newUser = new Galaxycalc(32);
         newUser.setGalacticAges();
+    });
+
+    test("it should return the user's age in Mercury years", () => {
         expect(newUser.mercuryAge).toEqual(133.33);
-    })
+    });
 
 })
