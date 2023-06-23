@@ -107,4 +107,13 @@ describe("Galaxycalc object and its methods", () => {
         expect(newUser.jupiterPassage).toEqual("1.52 years will pass on Jupiter until you are 50 on Earth.");
     });
 
+    test("calc-method should store a unique message if input age matches the user's current age", () => {
+        newUser.calcGalacticPassage(32);
+        expect(newUser.earthPassage).toEqual("The age you just entered matches how old you are already!");
+        expect(newUser.mercuryPassage).toEqual("");
+        expect(newUser.venusPassage).toEqual("");
+        expect(newUser.marsPassage).toEqual("");
+        expect(newUser.jupiterPassage).toEqual("");
+    });
+
 })
