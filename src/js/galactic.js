@@ -12,4 +12,7 @@ export default class Galaxycalc {
         this.jupiterPassage = 0;
     }
 
+    setGalacticAges() {
+
+    }
 };
