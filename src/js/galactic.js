@@ -21,16 +21,16 @@ export default class Galaxycalc {
 
     calcGalacticPassage(compareAge) {
         let filterAge = Math.round(compareAge)
-        let endPassage = `${filterAge} on Earth.`
+        let endPassage = `since you were ${filterAge} on Earth.`
         if (filterAge < this.earthAge) {
             if ((this.earthAge - filterAge) === 1) {
-                this.earthPassage = `${this.earthAge - filterAge} year has passed since you were ${endPassage}`;
+                this.earthPassage = `${this.earthAge - filterAge} year has passed ${endPassage}`;
             } else {
-                this.earthPassage = `${this.earthAge - filterAge} years have passed since you were ${endPassage}`;
+                this.earthPassage = `${this.earthAge - filterAge} years have passed ${endPassage}`;
             }
-            this.mercuryPassage = `${(this.mercuryAge - (filterAge / 0.24)).toFixed(2)} years have passed on Mercury since you were ${endPassage}`;
-            this.venusPassage = `${(this.venusAge - (filterAge / 0.62)).toFixed(2)} years have passed on Venus since you were ${endPassage}`;
-            this.marsPassage = `${(this.marsAge - (filterAge / 1.88)).toFixed(2)} years have passed on Mars since you were ${endPassage}`;
+            this.mercuryPassage = `${(this.mercuryAge - (filterAge / 0.24)).toFixed(2)} years have passed on Mercury ${endPassage}`;
+            this.venusPassage = `${(this.venusAge - (filterAge / 0.62)).toFixed(2)} years have passed on Venus ${endPassage}`;
+            this.marsPassage = `${(this.marsAge - (filterAge / 1.88)).toFixed(2)} years have passed on Mars ${endPassage}`;
 
 
         }
