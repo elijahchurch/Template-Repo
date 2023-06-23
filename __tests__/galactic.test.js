@@ -16,6 +16,11 @@ describe("Galaxycalc object and its methods", () => {
         expect(newUser.jupiterPassage).toEqual("");
     });
 
+    test("it should create a calculator object with a rounded age", () => {
+        newUser = newGalaxycalc(32.43);
+        expect(newUser.earthAge).toEqual(32);
+    });
+
     let newUser;
 
     beforeEach(() => {
