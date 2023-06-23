@@ -21,18 +21,20 @@ export default class Galaxycalc {
 
     calcGalacticPassage(compareAge) {
         let filterAge = Math.round(compareAge)
-        let endPassage = `since you were ${filterAge} on Earth.`
+        let pastPassage = `since you were ${filterAge} on Earth.`
+        let futurePassage = `until you are ${filterAge} on Earth.`
         if (filterAge < this.earthAge) {
             if ((this.earthAge - filterAge) === 1) {
-                this.earthPassage = `${this.earthAge - filterAge} year has passed ${endPassage}`;
+                this.earthPassage = `${this.earthAge - filterAge} year has passed ${pastPassage}`;
             } else {
-                this.earthPassage = `${this.earthAge - filterAge} years have passed ${endPassage}`;
+                this.earthPassage = `${this.earthAge - filterAge} years have passed ${pastPassage}`;
             }
-            this.mercuryPassage = `${(this.mercuryAge - (filterAge / 0.24)).toFixed(2)} years have passed on Mercury ${endPassage}`;
-            this.venusPassage = `${(this.venusAge - (filterAge / 0.62)).toFixed(2)} years have passed on Venus ${endPassage}`;
-            this.marsPassage = `${(this.marsAge - (filterAge / 1.88)).toFixed(2)} years have passed on Mars ${endPassage}`;
-            this.jupiterPassage = `${(this.jupiterAge - (filterAge / 11.86)).toFixed(2)} years have passed on Jupiter ${endPassage}`;
-
+            this.mercuryPassage = `${(this.mercuryAge - (filterAge / 0.24)).toFixed(2)} years have passed on Mercury ${pastPassage}`;
+            this.venusPassage = `${(this.venusAge - (filterAge / 0.62)).toFixed(2)} years have passed on Venus ${pastPassage}`;
+            this.marsPassage = `${(this.marsAge - (filterAge / 1.88)).toFixed(2)} years have passed on Mars ${pastPassage}`;
+            this.jupiterPassage = `${(this.jupiterAge - (filterAge / 11.86)).toFixed(2)} years have passed on Jupiter ${pastPassage}`;
+        } else if (filterAge > this.earthAge) {
+            this.earthPassage = `${filterAge - this.earthAge} years will pass ${futurePassage}`;
 
         }
 
