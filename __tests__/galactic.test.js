@@ -78,6 +78,10 @@ describe("Galaxycalc object and its methods", () => {
         newUser.calcGalacticPassage(22);
         expect(newUser.jupiterPassage).toEqual("0.85 years have passed on Jupiter since you were 22 on Earth.")
     })
+    test("calc-method should calculate the future passage of earth from input", () => {
+        newUser.calcGalacticPassage(50);
+        expect(newUser.earthPassage).toEqual("18 years will pass until you are 50 on Earth.");
+    })
 
 
 })
