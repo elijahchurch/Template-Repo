@@ -42,6 +42,7 @@ export default class Galaxycalc {
             this.mercuryPassage = `${((filterAge / 0.24) - this.mercuryAge).toFixed(2)} years will pass on Mercury ${futurePassage}`;
             this.venusPassage = `${((filterAge / 0.62) - this.venusAge).toFixed(2)} years will pass on Venus ${futurePassage}`;
             this.marsPassage = `${((filterAge / 1.88) - this.marsAge).toFixed(2)} years will pass on Mars ${futurePassage}`;
+            this.jupiterPassage = `${((filterAge / 11.86) - this.jupiterAge).toFixed(2)} years will pass on Jupiter ${futurePassage}`;
         }
 
     }
