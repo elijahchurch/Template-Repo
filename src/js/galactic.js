@@ -18,4 +18,9 @@ export default class Galaxycalc {
         this.marsAge += parseFloat((this.earthAge / 1.88).toFixed(2));
         this.jupiterAge += parseFloat((this.earthAge / 11.86).toFixed(2));
     }
+
+    calcGalacticPassage(compareAge) {
+
+    }
+
 }

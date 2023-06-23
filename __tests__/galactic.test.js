@@ -23,20 +23,29 @@ describe("Galaxycalc object and its methods", () => {
         newUser.setGalacticAges();
     });
 
-    test("it should update the user's age in Mercury years", () => {
+    test("method should update the user's age in Mercury years", () => {
         expect(newUser.mercuryAge).toEqual(133.33);
     });
 
-    test("it should update the user's age in Venus years", () => {
+    test("method should update the user's age in Venus years", () => {
         expect(newUser.venusAge).toEqual(51.61);
     });
 
-    test("it should update the user's age in Mars years", () => {
+    test("method should update the user's age in Mars years", () => {
         expect(newUser.marsAge).toEqual(17.02);
+    });
+
+    test("method should update the user's age in Jupiter years", () => {
+        expect(newUser.jupiterAge).toEqual(2.70);
+    });
+
+    test("method should calculate the passage of earth years from input", () => {
+        newUser.calcGalacticPassage(22);
+        expect(newUser.earthPassage).toEqual('10 years have passed since you were 22 on Earth')
     })
 
-    test("it should update the user's age in Jupiter years", () => {
-        expect(newUser.jupiterAge).toEqual(2.70);
-    })
+
+
+
 
 })
