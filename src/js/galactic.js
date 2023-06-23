@@ -28,6 +28,7 @@ export default class Galaxycalc {
             } else {
                 this.earthPassage = `${this.earthAge - filterAge} years have passed since you were ${endPassage}`;
             }
+            this.mercuryPassage = `${(this.mercuryAge - (compareAge / 0.24)).toFixed(2)} years have passed on Mercury since you were ${endPassage}`;
 
 
         }
