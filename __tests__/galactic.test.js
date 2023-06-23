@@ -8,16 +8,16 @@ describe("Galaxycalc object and its methods", () => {
     });
 
     test("it should create a calculator object that contains the user current age", () => {
-        expect(this.earthAge).toEqual(32);
-        expect(this.mercuryAge).toEqual(0);
-        expect(this.venusAge).toEqual(0);
-        expect(this.marsAge).toEqual(0);
-        expect(this.jupiterAge).toEqual(0);
-        expect(this.earthPassage).toEqual(0);
-        expect(this.mercuryPassage).toEqual(0);
-        expect(this.venusPassage).toEqual(0);
-        expect(this.marsPassage).toEqual(0);
-        expect(this.jupeiterPassage).toEqual(0);
+        expect(newUser.earthAge).toEqual(32);
+        expect(newUser.mercuryAge).toEqual(0);
+        expect(newUser.venusAge).toEqual(0);
+        expect(newUser.marsAge).toEqual(0);
+        expect(newUser.jupiterAge).toEqual(0);
+        expect(newUser.earthPassage).toEqual(0);
+        expect(newUser.mercuryPassage).toEqual(0);
+        expect(newUser.venusPassage).toEqual(0);
+        expect(newUser.marsPassage).toEqual(0);
+        expect(newUser.jupiterPassage).toEqual(0);
     });
 
 })
