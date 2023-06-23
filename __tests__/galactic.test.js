@@ -9,11 +9,11 @@ describe("Galaxycalc object and its methods", () => {
         expect(newUser.venusAge).toEqual(0);
         expect(newUser.marsAge).toEqual(0);
         expect(newUser.jupiterAge).toEqual(0);
-        expect(newUser.earthPassage).toEqual(0);
-        expect(newUser.mercuryPassage).toEqual(0);
-        expect(newUser.venusPassage).toEqual(0);
-        expect(newUser.marsPassage).toEqual(0);
-        expect(newUser.jupiterPassage).toEqual(0);
+        expect(newUser.earthPassage).toEqual("");
+        expect(newUser.mercuryPassage).toEqual("");
+        expect(newUser.venusPassage).toEqual("");
+        expect(newUser.marsPassage).toEqual("");
+        expect(newUser.jupiterPassage).toEqual("");
     });
 
     let newUser;
