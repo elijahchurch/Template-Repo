@@ -4,8 +4,13 @@ body {
     font-size: larger;
 }
 
+input {
+    width: 60px;
+}
+
 img {
     width: 300px;
+    border-radius: 30px;
 }
 
 #results {
@@ -20,7 +25,9 @@ img {
 
 .container {
     border-style: solid;
-    background-color: darkblue;
+    border-color: black;
+    border-radius: 30px;
+    background-color: rgba(47, 16, 88, 0.8);
     color: aliceblue;
     margin: 20px;
     padding: 20px;
