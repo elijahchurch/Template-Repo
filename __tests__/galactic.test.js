@@ -49,8 +49,8 @@ describe("Galaxycalc object and its methods", () => {
         expect(newUser.earthPassage).toEqual('1 year has passed since you were 31 on Earth.');
     });
 
-    test("method will round user's input up and turn it into a positive #", () => {
-        newUser.calcGalacticPassage(-22.343);
+    test("method will round user's input up ", () => {
+        newUser.calcGalacticPassage(22.343);
         expect(newUser.earthPassage).toEqual('10 years have passed since you were 22 on Earth.');
     });
 

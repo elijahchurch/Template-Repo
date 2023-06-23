@@ -20,12 +20,13 @@ export default class Galaxycalc {
     }
 
     calcGalacticPassage(compareAge) {
-        let endPassage = `${compareAge} on Earth.`
-        if (compareAge < this.earthAge) {
-            if ((this.earthAge - compareAge) === 1) {
-                this.earthPassage = `${this.earthAge - compareAge} year has passed since you were ${endPassage}`;
+        let filterAge = Math.round(compareAge)
+        let endPassage = `${filterAge} on Earth.`
+        if (filterAge < this.earthAge) {
+            if ((this.earthAge - filterAge) === 1) {
+                this.earthPassage = `${this.earthAge - filterAge} year has passed since you were ${endPassage}`;
             } else {
-                this.earthPassage = `${this.earthAge - compareAge} years have passed since you were ${endPassage}`;
+                this.earthPassage = `${this.earthAge - filterAge} years have passed since you were ${endPassage}`;
             }
 
 
