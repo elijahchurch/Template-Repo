@@ -20,6 +20,9 @@ export default class Galaxycalc {
     }
 
     calcGalacticPassage(compareAge) {
+        if (compareAge < this.earthAge) {
+            this.earthPassage = `${this.earthAge - compareAge} years have passed since you were ${compareAge} on Earth`;
+        }
 
     }
 
