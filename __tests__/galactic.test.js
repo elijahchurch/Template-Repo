@@ -28,36 +28,38 @@ describe("Galaxycalc object and its methods", () => {
         newUser.setGalacticAges();
     });
 
-    test("method should update the user's age in Mercury years", () => {
+    test("set-method should update the user's age in Mercury years", () => {
         expect(newUser.mercuryAge).toEqual(133.33);
     });
 
-    test("method should update the user's age in Venus years", () => {
+    test("set-method should update the user's age in Venus years", () => {
         expect(newUser.venusAge).toEqual(51.61);
     });
 
-    test("method should update the user's age in Mars years", () => {
+    test("set-method should update the user's age in Mars years", () => {
         expect(newUser.marsAge).toEqual(17.02);
     });
 
-    test("method should update the user's age in Jupiter years", () => {
+    test("set-method should update the user's age in Jupiter years", () => {
         expect(newUser.jupiterAge).toEqual(2.70);
     });
 
-    test("method should calculate the passage of earth years from input", () => {
+    test("calc-method should calculate the passage of earth years from input", () => {
         newUser.calcGalacticPassage(22);
         expect(newUser.earthPassage).toEqual('10 years have passed since you were 22 on Earth.');
     });
 
-    test("method should return correct grammer if differnce in earth age is only 1 year", () => {
+    test("calc-method should return correct grammer if differnce in earth age is only 1 year", () => {
         newUser.calcGalacticPassage(31);
         expect(newUser.earthPassage).toEqual('1 year has passed since you were 31 on Earth.');
     });
 
-    test("method will round user's input up ", () => {
+    test("calc-method will round user's input up ", () => {
         newUser.calcGalacticPassage(22.343);
         expect(newUser.earthPassage).toEqual('10 years have passed since you were 22 on Earth.');
     });
+
+    test()
 
 
 
