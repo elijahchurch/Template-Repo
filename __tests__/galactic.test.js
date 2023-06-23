@@ -97,4 +97,9 @@ describe("Galaxycalc object and its methods", () => {
         expect(newUser.venusPassage).toEqual("29.04 years will pass on Venus until you are 50 on Earth.");
     });
 
+    test("calc-method should calculate the future passage of Mars from input", () => {
+        newUser.calcGalacticPassage(50);
+        expect(newUser.marsPassage).toEqual("9.58 years will pass on Mars until you are 50 on Earth.");
+    });
+
 })
