@@ -1,8 +1,8 @@
-# Galactic Calculator
+#  Title
 
 #### By: Jason Elijah Church
 
-#### A webpage where a user can view how old they are on different planets.
+#### Brief Description
 
 ## Technologies Used
 
@@ -19,7 +19,7 @@
 * Babel
 
 ## Description:
-This webpage was made with HTML and styled with CSS. It contains a simple form that will take a user's inputted age and generate a text response on how old they are on five different planets. Most of the time for this project was spent in the backend, where a Galaxycalc class was made and tested for. The Galaxycalc class has a constructor that has five properties to store planetKeys - ageValues and five properties to store messages generated from the calcGalacticPassage prototype method. The constructor takes only one argument in its parameter, the users age, and stores it in the earthAge property. From there, the setGalacticAges method can be called upon the object to set and store the age values of each of the other planets by inputted the earthAge value into a calculation defined for each other planet. The calcGalacticPassage method takes another inputted age as an argument and runs that inputted age through branching logic against the stored age values. It then stores responses into the planets' passage properties within the Galaxycalc object.
+
 
 ## Setup/ Installation Requirements
 
@@ -30,9 +30,6 @@ This webpage was made with HTML and styled with CSS. It contains a simple form t
 
 ## Known Bugs
 
-* Due to time restraints, the calcGalacticPassage() prototype method is not tested for nor accounts for grammar mistakes in the stored return when non-Earth planets have a difference of age of exactly 1.
-* Not all JS backend functionality is present on the actual site at the moment.
-* Images on the site are not fully locked into place.
 
 ## License
 

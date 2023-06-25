@@ -19,7 +19,7 @@ module.exports = {
             verbose: true
         }),
         new HtmlWebpackPlugin({
-            title: 'Galactic Calculator',
+            title: "name",
             template: './src/index.html',
             inject: 'body'
         })
